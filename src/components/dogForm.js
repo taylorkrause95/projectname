@@ -4,8 +4,17 @@ class DogForm extends React.Component {
   render() {
     return (
         <div>
-          This is my dog form Component
-        </div>
+          <h1>Locations</h1>
+
+        <ul>
+          <li>Main Shelter</li>
+          <li>Mall Location</li>
+          <li>Boarding</li>
+        </ul>
+      </div>
+
+
+
     );
   }
 }
