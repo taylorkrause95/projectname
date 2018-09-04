@@ -1,4 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
+import DogForm from './components/dogForm'
 
-render(<p>Dog Rescue</p>,document.getElementById('root'));
+render(<DogForm/>,document.getElementById('root'));
