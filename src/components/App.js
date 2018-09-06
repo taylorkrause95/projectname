@@ -1,15 +1,26 @@
 import React, {Component} from 'react'
 import { Route } from 'react-router-dom'
 
-import Nav from './components/Nav'
-import Home from './components/Home'
-import DogForm from './components/dogForm'
-import About from './components/About'
-import Contact from './components/Contact'
-import Adoption from './components/Adoption'
+import Nav from './Nav'
+import Home from './Home'
+import DogForm from './dogForm'
+import About from './About'
+import Contact from './Contact'
+import Adoption from './Adoption'
+import axios from 'axios'
 
 
 export default class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      dogs: []
+    }
+  }
+  componentDidMount(){
+    axios.get('https://dog.ceo/api/breeds/image/random').then()
+  }
+
   render(){
     return(
       <div>

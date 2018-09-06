@@ -6,7 +6,7 @@ class Nav extends React.Component {
   render() {
     return (
         <nav>
-          <li><Link to="/">Home</Link></li>
+          <li class="testclass"><Link to="/">Home</Link></li>
           <li><Link to="/form">Form</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
