@@ -10,7 +10,7 @@ import Nav from './components/Nav'
 
 import axios from 'axios'
 
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>

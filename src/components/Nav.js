@@ -12,15 +12,6 @@ import Adoption from './Adoption'
 class Nav extends React.Component {
   render() {
     return (
-        // <ul class="nav-bar">
-        //   <li class="testclass"><Link to="/">Home</Link></li>
-        //     <li class="testclass"><Link to="/">Nav</Link></li>
-        //   <li><Link to="/form">Form</Link></li>
-        //   <li><Link to="/about">About</Link></li>
-        //   <li><Link to="/contact">Contact</Link></li>
-        //   <li><Link to='/adoption'>Adoption</Link></li>
-        // </ul>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +31,9 @@ class Nav extends React.Component {
       </li>
       <li class="nav-item">
         <Link to="/contact" className="nav-link">Contact</Link>
+      </li>
+      <li class="nav-item">
+        <Link to="/form" className="nav-link">Form</Link>
       </li>
     </ul>
   </div>
