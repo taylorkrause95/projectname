@@ -1,30 +1,38 @@
 import React, {Component} from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from 'react-router-dom'
+import Nav from './components/Nav'
 import Home from './components/Home'
-import dogForm from './components/dogForm'
+import DogForm from './components/dogForm'
 import About from './components/About'
 import Contact from './components/Contact'
 import Adoption from './components/Adoption'
-
-import Nav from './components/Nav'
-
 import axios from 'axios'
 
-export default class App extends Component {
+
+ export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <div>
-            <Nav />
-          </div>
-            <Route path="/home" component={Home} />
-            <Route path="/form" component={dogForm} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/adoption" component={Adoption} />
-          </div>
-      </BrowserRouter>
-    )
+      <div className="App">
+
+            <li><Link to="/Nav">Nav</Link></li>
+            <li><Link to="/Home">Home</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/Adoption">Adoption</Link></li>
+            <li><Link to="/Contact">Contact</Link></li>
+            <li><Link to="/dogForm">dogForm</Link></li>
+      <Route path="/Nav" component={Nav} />
+      <Route path="/Home" component={Home} />
+      <Route path="/About" component={About} />
+      <Route path="/Adoption" component={Adoption} />
+      <Route path="/Contact" component={Contact} />
+      <Route path="/DogForm" component={DogForm} />
+    </div>
+  );
   }
 }
