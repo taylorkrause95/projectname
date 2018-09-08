@@ -21,30 +21,33 @@ class DogForm extends React.Component {
 
   render() {
     return (
-      <form className="dogform" onSubmit={this.handleSubmit}>
-        <label>
-          Breed:
-          <input type="text" value={this.state.value} />
-          </label>
-          <label>
-          Location:
-          <input type="text" value={this.state.value} placeholder="City" />
-          </label>
-          <label>
-            Color:
-            <input type="text" value={this.state.value} />
-          </label>
-          <label>
-            Age:
-            <input type="text" value={this.state.value} />
-          </label>
-          <label>
-            Weight:
-            <input type="text" value={this.state.value} />
-          </label>
-          <label>
-          <input type="submit" value="Submit" />
-          </label>
+        <form className="dogform" action={'http://api.petfinder.com/pet.find'} method="get">
+            <label>
+                Breed:
+                <input name={'breed'} type="text" />
+            </label>
+            <label>
+                Location:
+                <input name={'location'}  type="text" placeholder="City" />
+            </label>
+            <label>
+                Age:
+                <input name={'age'} placeholder="Age" type="text" />
+            </label>
+            <label>
+                Sex:
+                <input name={'sex'} type="text" placeholder="sex"/>
+            </label>
+            <label>
+                Size:
+                <input name={'size'} type="text" />
+                <input type="text" name={'key'} value={'7d7127de0db19f217f7f0ebb59475ea5'} hidden />
+                <input type="text" name={'format'} value={'xml'} hidden />
+                <input type="text" name={'callback'} value={'handleData'} hidden />
+            </label>
+            <label>
+                <input type="submit" value="Submit" />
+            </label>
         </form>
     );
   }
