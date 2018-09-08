@@ -21,7 +21,7 @@ class DogForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="dogform" onSubmit={this.handleSubmit}>
         <label>
           Breed:
           <input type="text" value={this.state.value} />

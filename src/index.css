@@ -1,9 +1,34 @@
+.homepage {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+
 body {
-    background-color: powderblue;
+    background-color: white;
 }
+
 h1 {
-    color: blue;
+    color: black;
 }
-p {
-    color: red;
+
+a:hover {
+  border-bottom: 2px solid #4286f4;
+}
+
+.about {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.founders {
+  word-spacing: 25em;
+  border: 1px solid black;
+  margin-right:  10px;
 }
