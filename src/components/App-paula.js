@@ -6,7 +6,6 @@ import Home from './Home'
 import DogForm from './dogForm'
 import About from './About'
 import Contact from './Contact'
-import Adoption from './Adoption'
 import axios from 'axios'
 
 
@@ -30,7 +29,6 @@ export default class App extends Component {
         <Route path="/form" component={DogForm} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route path="/adoption" component={Adoption} />
       </div>
     )
   }
